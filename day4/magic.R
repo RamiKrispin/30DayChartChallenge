@@ -47,7 +47,7 @@ sankey_ly(df, cat_cols = c("student","gender","house", "eye_color", "blood", "de
          xaxis = list(showgrid = F, zeroline = F, showticklabels = F),
          yaxis = list(showgrid = F, zeroline = F, showticklabels = F),
          font = list(
-           size = 12,
+           size = 14,
            color = 'black'
          ),
          annotations = list(
@@ -56,6 +56,7 @@ sankey_ly(df, cat_cols = c("student","gender","house", "eye_color", "blood", "de
            text = "Data Source: https://www.kaggle.com/gulsahdemiryurek/harry-potter-dataset",
            xref = "paper",
            yref = "paper",
+           font = list(size = 16),
            showarrow = FALSE),
          margin = list(t = 50, b = 70))
 
