@@ -1,4 +1,8 @@
-# get_dist <- function(input, start, alpha, lambda, cores = parallel::detectCores())
+# Calculating the residual distribution for the US electricity forecast
+# The residuals are used to create prediction interval for the forecast
+# The US demand electricity forecast available here:
+# https://ramikrispin.github.io/USelectricity/
+
 set.seed(123456)
 library(dplyr)
 library(plotly)
@@ -13,6 +17,7 @@ cores <- parallel::detectCores()
 lags <- c(1:24, 48, 72, 168)
 # Set the number of simulations
 # 100 may take some time to run... 30-40 will also provides nice dist
+# Saved simulation available on ./day6/res_df.rda
 n <- 100
 # Loading rda file from github
 url <- "https://github.com/RamiKrispin/USelectricity/blob/main/data/elec_df.rda?raw=true"
