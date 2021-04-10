@@ -3,6 +3,8 @@ library(plotly)
 library(dplyr)
 library(lubridate)
 library(tsibble)
+library(fabletools)
+library(feasts)
 
 data("us_monthly")
 head(us_monthly)
@@ -15,9 +17,9 @@ df <- us_monthly %>%
 
 
 df$trend <- (df %>%
-               # fabletools::model(feasts::STL(formula(paste(field, "~ season(window = 'periodic')")))) %>%
-               fabletools::model(feasts::STL(y ~ season(window = 10))) %>%
-               fabletools::components())$trend
+               # model(feasts::STL(formula(paste(field, "~ season(window = 'periodic')")))) %>%
+               model(STL(y ~ season(window = 10))) %>%
+               components())$trend
 
 df$detrend <- df$y - df$trend
 head(df)
@@ -164,20 +166,22 @@ p2 <- plot_ly(data = df,
                   showarrow = FALSE,
                   yref = "paper",
                   xref = "paper") %>%
-  add_annotations(text = paste("The monthly distribution of the US's",
-                               "natural gas consumption is significantly",
-                               "wider when plotting the series without",
-                               "de-trend it. After de-trend the series",
-                               "distribution is narrowing down, where",
-                               "it is more pronounced during the summer",
-                               "months.",
+  add_annotations(text = paste("The monthly distribution of",
+                               "the US's natural gas",
+                               "consumption is significantly",
+                               "wider when plotting the series",
+                               "without de-trend it. After",
+                               "de-trend the series distribution",
+                               "is narrowing down, where it is",
+                               "more pronounced during the",
+                               "summer months.",
                                sep = "<br>"),
                   align = "left",
                   font = list(color = title_c,
                               size = size,
                               family = family),
-                  y = 0.25,
-                  x = 1.12,
+                  y = 0.5,
+                  x = 1.08,
                   showarrow = FALSE,
                   yref = "paper",
                   xref = "paper")
@@ -205,6 +209,18 @@ p3 <- plot_ly(data = df,
                   x = 0.5,
                   showarrow = FALSE,
                   yref = "paper",
+                  xref = "paper") %>%
+  add_annotations(text = paste("#30DayChartChallenge Day 9",
+                               "Viz: Rami Krispin",
+                               "Data: US Energy Information Administration",
+                               sep = " | "),
+                  font = list(color = "#dee2e6",
+                              size = 12,
+                              family = family),
+                  y = -0.37,
+                  x = 0,
+                  showarrow = FALSE,
+                  yref = "paper",
                   xref = "paper")
 
 
@@ -219,5 +235,6 @@ subplot(p1, p2, p3,
   layout(plot_bgcolor = background,
          paper_bgcolor = background,
          font = list(color = "white"),
-         margin = list(t = 120, b = 100, l = 10, r = 100, pad = 20))
+         xaxis = list(zerolinecolor = "white"),
+         margin = list(t = 120, b = 70, l = 10, r = 100, pad = 20))
 
