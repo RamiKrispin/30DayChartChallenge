@@ -49,6 +49,7 @@ size <- 11
 # arrowwidth <- 1
 # size <- 11
 
+# The series
 p1 <- plot_ly(data = df,
               x = ~ date,
               y = ~ y,
@@ -143,10 +144,7 @@ p1 <- plot_ly(data = df,
                   xref = "paper")
 
 
-
-
-
-
+# Regular seasonal plot
 p2 <- plot_ly(data = df,
               x = ~ month,
               y = ~ y,
@@ -186,11 +184,7 @@ p2 <- plot_ly(data = df,
                   yref = "paper",
                   xref = "paper")
 
-
-# p3 <- plot_ly(data = df) %>%
-#   add_lines(x = ~ date,
-#             y = ~ y - trend)
-
+# Detrend seasonal plot
 p3 <- plot_ly(data = df,
               x = ~ month,
               y = ~ y - trend,
@@ -223,10 +217,7 @@ p3 <- plot_ly(data = df,
                   yref = "paper",
                   xref = "paper")
 
-
-
-
-
+# Merging the plots
 subplot(p1, p2, p3,
         nrows = 3,
         shareX = FALSE,
