@@ -218,7 +218,7 @@ p3 <- plot_ly(data = df,
                   xref = "paper")
 
 # Merging the plots
-subplot(p1, p2, p3,
+p <- subplot(p1, p2, p3,
         nrows = 3,
         shareX = FALSE,
         shareY = FALSE,
