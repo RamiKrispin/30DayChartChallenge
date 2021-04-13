@@ -40,6 +40,10 @@ Code for the
 
 [<img src="day9/statistics.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day9/statistics.R)
 
+### Day 10 \| abstract
+
+[<img src="day10/abstract.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day10/abstract.R)
+
 ### Day 11 \| circle
 
 [<img src="day11/circle.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day11/circle.R)
