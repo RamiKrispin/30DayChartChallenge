@@ -47,3 +47,7 @@ Code for the
 ### Day 11 \| circle
 
 [<img src="day11/circle.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day11/circle.R)
+
+### Day 12 \| strips
+
+[<img src="day12/strips.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day12/strips.R)
