@@ -1,3 +1,4 @@
+# libraries
 library(USgas)
 library(plotly)
 library(dplyr)
@@ -9,6 +10,7 @@ hex_to_rgb <- function(hex){
   return(rgb)
 }
 
+# Data
 data("us_monthly")
 
 head(us_monthly)
@@ -16,7 +18,7 @@ head(us_monthly)
 
 df <- us_monthly
 
-# Set ACF parameters
+# Calculate the ACF
 max.lag <- 72
 ci <- 0.95
 na.rm <- FALSE
@@ -52,7 +54,6 @@ background <- "black"
 fontcolor <- "white"
 seasonal_color <- "#2ec4b6"
 non_seasonal_color <- "#e0fbfc"
-lag1_color <- "#ff006e"
 lag1_color <- "#f7aef8"
 grid_color <- "#343a40"
 actual_c <- "#ffbe0b"
@@ -65,6 +66,7 @@ arrowhead <- 4
 arrowsize <- 1
 arrowwidth <- 1
 
+# Series plot
 p1 <- plot_ly(data = df,
               x = ~ date,
               y = ~ y,
@@ -126,7 +128,7 @@ p1 <- plot_ly(data = df,
                   yref = "paper",
                   xref = "paper")
 
-
+# ACF plot
 p2 <- plot_ly(data = acf) %>%
   add_trace(x = ~ lag,
             y = ~ lag1,
@@ -166,7 +168,7 @@ p2 <- plot_ly(data = acf) %>%
                  showgrid = TRUE),
     font = list(color = fontcolor),
     xaxis = list(zerolinecolor = fontcolor,
-                 title = "Lags",
+                 title = "Lag",
                  zeroline = FALSE,
                  showline = FALSE,
                  dtick = 12,
@@ -324,7 +326,7 @@ p2 <- plot_ly(data = acf) %>%
                   yref = "paper",
                   xref = "paper")
 
-
+# Subplot
 subplot(p1, p2, nrows = 2,
         titleX = TRUE,
         titleY = TRUE,
