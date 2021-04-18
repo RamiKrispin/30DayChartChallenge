@@ -51,3 +51,7 @@ Code for the
 ### Day 12 \| strips
 
 [<img src="day12/strips.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day12/strips.R)
+
+### Day 13 \| correlation
+
+[<img src="day13/correlation.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day13/correlation.R)
