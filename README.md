@@ -55,3 +55,7 @@ Code for the
 ### Day 13 \| correlation
 
 [<img src="day13/correlation.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day13/correlation.R)
+
+### Day 14 \| space
+
+[<img src="day14/space.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day14/space.R)
