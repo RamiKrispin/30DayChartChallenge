@@ -163,7 +163,7 @@ plot_ly()  %>%
                       title = "Absolute Magnitude (H)",
                       range = c(8, 32.5)),
          margin = list(t = 50, b = 110, l = 25, r = 20, pad = 4)) %>%
-  add_annotations(text = "Near Earth Object (NEO)",
+  add_annotations(text = "Near Earth Objects (NEOs)",
                   font = list(color = "white",
                               size = 36,
                               family = "Ariel"),
