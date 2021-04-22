@@ -59,3 +59,7 @@ Code for the
 ### Day 14 \| space
 
 [<img src="day14/space.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day14/space.R)
+
+### Day 21 \| downwards
+
+[<img src="day21/downwards.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day21/downwards.R)
