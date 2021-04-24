@@ -63,3 +63,7 @@ Code for the
 ### Day 21 \| downwards
 
 [<img src="day21/downwards.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day21/downwards.R)
+
+### Day 22 \| downwards
+
+[<img src="day22/animation.mov" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day22/animation.R)
