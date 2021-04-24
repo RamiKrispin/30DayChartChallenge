@@ -86,7 +86,7 @@ methods <- list(ets1 = list(method = "ets",
                             notes = "tslm with trend and seasonal"))
 
 
-train_method = list(partitions = 6,
+train_method = list(partitions = 8,
                     sample.out = 12,
                     space = 3)
 
@@ -98,7 +98,13 @@ md <- train_model(input = ts.obj,
 
 plot_error(md)
 
-plot_model(md)
+plot_model(md) %>%
+  layout(title = "Time Series Models Horse Racing with Backtesting",
+         xaxis = list(range = c(2016, 2020.5)),
+         yaxis = list(title = "Number of Passengers"))
+
+
+
 
 post_covid$yhat <- as.numeric(md$forecast$hw1$forecast$mean)
 post_covid$upper95 <- as.numeric(md$forecast$hw1$forecast$upper[,2])
