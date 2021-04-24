@@ -66,4 +66,4 @@ Code for the
 
 ### Day 22 \| downwards
 
-[<img src="day22/animation.mov" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day22/animation.R)
+[<img src="day22/animation.gif" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day22/animation.R)
