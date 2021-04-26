@@ -263,7 +263,7 @@ p5 <- plot_ly(data = df_yr %>% dplyr::filter(year >= 2005 & year < 2021),
 p1 <- plot_ly(data = d) %>%
   add_lines(x = ~date,
             y = ~ y / 1000,
-            name = "Alcohol Sells",
+            name = "Alcohol Sales",
             line = list(color = "#343a40")) %>%
   add_lines(x = ~ date,
             y = ~ trend / 1000,
