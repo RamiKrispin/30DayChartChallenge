@@ -68,6 +68,6 @@ Code for the
 
 [<img src="day21/downwards.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day21/downwards.R)
 
-### Day 22 \| downwards
+### Day 22 \| animation
 
 [<img src="day22/animation.gif" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day22/animation.R)
