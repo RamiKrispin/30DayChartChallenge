@@ -84,3 +84,7 @@ Code for the [#30DayChartChallenge](https://github.com/Z3tt/30DayChartChallenge_
 ### Day 22 | animation
 
 [<img src="day22/animation.gif" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day22/animation.R)
+
+### Day 25 | demographic
+
+[<img src="day25/demographic.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day25/demographic.R)
