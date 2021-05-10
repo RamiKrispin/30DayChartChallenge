@@ -328,7 +328,7 @@ plotly::subplot(p1,p2,
                   font = list(family = "Ariel",
                               size = 36),
                   showarrow = FALSE) %>%
-  add_annotations(text = "In some cases, forecasting future growth or decay of a series could be supper challenging, mainly when the rates are",
+  add_annotations(text = "In some cases, forecasting future growth or decay of a series could be super challenging, mainly when the rates are",
                   xref = "paper",
                   yref = "paper",
                   x = 0.28,
