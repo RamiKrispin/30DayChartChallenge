@@ -75,3 +75,7 @@ Code for the
 ### Day 25 \| demographic
 
 [<img src="day25/demographic.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day25/demographic.R)
+
+### Day 26 \| trends
+
+[<img src="day26/trends.png" width="100%" />](https://github.com/RamiKrispin/30DayChartChallenge/blob/main/day26/trends.R)
